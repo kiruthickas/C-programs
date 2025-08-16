@@ -1,21 +1,29 @@
 
 #include <stdio.h>
 int main() {
-   int temp,c,f;
+   int temp,c;
    printf("enter temp");
-   scanf("%d",&temp);
-   c=(f-32)*5/9;
-   if(temp>=80)
+   scanf("%f",&temp);
+   if(temp>80)
+   { 
+      c=(temp-32)*5/9;
+      printf("temperature in celcious %f",c);
+   }
+   else
+   {
+      c=temp;
+      printf("temperature in celcious %f",c);
+   }
+   if(c>=35)
    {
        printf("\n it is hot");
    }
-   else if(temp>=60&&temp<=80)
+   else if(c>=15&&c<35)
    {
        printf("\n it is medium");
+      else
+      printf("\n it is cold");
+      
    }
-   else 
-   {
-       printf("\n it is cold");
-       
-   }
+
 }

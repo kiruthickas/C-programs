@@ -15,7 +15,7 @@ int main() {
     } else {
         price = 120;
     }
-    printf("Enter day of the week (1-Sunday, 2-Monday,3-tuesday 4-wednesday , 5-thursday, 6-friday, 7-Saturday)");
+    printf("Enter day of the week (1-Sunday, 2-Monday,3-tuesday, 4-wednesday , 5-thursday, 6-friday, 7-Saturday)");
     scanf("%d", &day);
 
     if (day == 4) {
@@ -26,3 +26,4 @@ int main() {
 
     return 0;
 }
+

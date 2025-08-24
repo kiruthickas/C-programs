@@ -1,27 +1,15 @@
 #include<stdio.h>
 int main()
 {
-    int a,b;
-    printf("enter a and b blood group ");
-    scanf(" %d %d",&a,&b);
-    if(a==1&&b==0)
-    {
-    printf("A blood group");
-    }
-    else if(a==0&&b==1)
-    {
-    printf(" B blood group ");
-     }
-     else if(a==1&&b==1)
-    {
-        printf(" C blood group");
-    }
-    else if( a==0&&b==1)
-    {
-    printf("D blood group");
-    }
-    else 
-    {
-    printf("wrong input");
-    }
+  int area,a,volume ,l,b,h;
+  printf("enter area of square");
+  scanf("%d",&a);
+  area=a*a;
+  printf("area of square %d\n",area);
+  printf("volume of cuboid");
+  scanf("%d%d%d",&l,&b,&h);
+  volume=l*b*h;
+  printf("volume of cuboid %d",volume);
 }
+  
+  
